@@ -317,7 +317,37 @@ JSON_Entry"
 TestB.
 ,
 $GLOBALGetValue_Nested_in_Nested"
-Testþ2û
+Test`^
+'
+Simatic.Ax.ConversionConversionMode
+WORD
+NONE
+0
+
+FORCE_SIGN
+1"
+0Â¿
+ 
+Simatic.Ax.JsonJsonValueKind
+INT
+_Array
+2
+_False
+6
+_Null
+7
+_Number
+4
+_Object
+1
+_String
+3
+_True
+5
+
+_Undefined
+0"
+0þ2û
 '
 Simatic.Ax.JsonIJsonElementMuteable&
 
@@ -520,91 +550,7 @@ AddElement>
 Simatic.Ax.Json#REF_TO Simatic.Ax.Json.JsonDocument!
 
 Simatic.Ax.JsonJsonDocument"
-BOOLÇ*Ä
-
-Simatic.Ax.Json
-JsonString*&
-Simatic.Ax.JsonAbstractJsonElement:&
-
-Simatic.Ax.JsonValue"
-
-STRINGB+
-
-Simatic.Ax.JsonToString"
-
-STRINGB¥
-
-Simatic.Ax.Json	Serializey
-
-Simatic.Ax.Jsondoc"][
-6
-Simatic.Ax.Json#REF_TO Simatic.Ax.Json.JsonDocument!
-
-Simatic.Ax.JsonJsonDocument"
-BOOLí*ê
-)
-$GLOBALUsingSerializer"
-TestFixture:3
-
-$GLOBALdoc"!
-
-Simatic.Ax.JsonJsonDocument:H
-
-$GLOBALcmpBuff"20
- 
-$GLOBALARRAY [0..20] OF CHAR
-CHAR:U
-
-$GLOBALe" 
-
-Simatic.Ax.JsonJsonBoolean*#"!
-
-Value
-1
-
-Key
-test:g
-
-$GLOBALb"
-
-Simatic.Ax.Json
-JsonString*6"4
-
-Value
-my string value
-
-Key
-	stringKey`^
-'
-Simatic.Ax.ConversionConversionMode
-WORD
-NONE
-0
-
-FORCE_SIGN
-1"
-0Â¿
- 
-Simatic.Ax.JsonJsonValueKind
-INT
-_Array
-2
-_False
-6
-_Null
-7
-_Number
-4
-_Object
-1
-_String
-3
-_True
-5
-
-_Undefined
-0"
-0–*“
+BOOL–*“
 
 Simatic.Ax.JsonJsonDInt*!
 Simatic.Ax.JsonBaseJsonNumber:$
@@ -700,7 +646,119 @@ AddElement>
 
 Simatic.Ax.Jsonelem"!
 
-Simatic.Ax.JsonIJsonElement2
+Simatic.Ax.JsonIJsonElementÇ*Ä
+
+Simatic.Ax.Json
+JsonString*&
+Simatic.Ax.JsonAbstractJsonElement:&
+
+Simatic.Ax.JsonValue"
+
+STRINGB+
+
+Simatic.Ax.JsonToString"
+
+STRINGB¥
+
+Simatic.Ax.Json	Serializey
+
+Simatic.Ax.Jsondoc"][
+6
+Simatic.Ax.Json#REF_TO Simatic.Ax.Json.JsonDocument!
+
+Simatic.Ax.JsonJsonDocument"
+BOOL¸*µ
+)
+$GLOBALUsingSerializer"
+TestFixture:3
+
+$GLOBALdoc"!
+
+Simatic.Ax.JsonJsonDocument:H
+
+$GLOBALcmpBuff"20
+ 
+$GLOBALARRAY [0..20] OF CHAR
+CHAR:
+
+$GLOBALstr"
+
+STRING:
+
+$GLOBALs"
+
+STRING:b
+
+$GLOBAL	myBoolean" 
+
+Simatic.Ax.JsonJsonBoolean*("&
+
+Value
+1
+
+Key
+	myBoolean:Y
+
+$GLOBALmyInt"
+
+Simatic.Ax.JsonJsonInt*'"%
+
+Value
+1234
+
+Key	
+myInt:`
+
+$GLOBALmyDint"
+
+Simatic.Ax.JsonJsonDInt*,"*
+
+Value
+
+12345678
+
+Key
+
+myDint:o
+
+$GLOBALmyString"
+
+Simatic.Ax.Json
+JsonString*7"5
+
+Value
+this is my string
+
+Key
+
+myString:O
+
+$GLOBALmyObject"
+
+Simatic.Ax.Json
+JsonObject*"
+
+Key
+
+myObjectB&
+$
+$GLOBALSerialize_BOOLEAN"
+TestB"
+ 
+$GLOBALSerialize_INT"
+TestB#
+!
+$GLOBALSerialize_DINT"
+TestB%
+#
+$GLOBALSerialize_STRING"
+TestB'
+%
+$GLOBALSerialize_INT_DINT"
+TestB+
+)
+$GLOBALSerialize_NestedObject"
+Test2
 
 AxUnit.MockingIPayload*º
 )

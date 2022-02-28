@@ -28,5 +28,47 @@
         </TestCaseResult>
       </TestCases>
     </TestResult>
+    <TestResult TestName="UsingSerializer.Serialize_BOOLEAN">
+      <TestCases>
+        <TestCaseResult Id="4" Parameter="" Result="Passed">
+          <FailedAsserts />
+        </TestCaseResult>
+      </TestCases>
+    </TestResult>
+    <TestResult TestName="UsingSerializer.Serialize_INT">
+      <TestCases>
+        <TestCaseResult Id="5" Parameter="" Result="Passed">
+          <FailedAsserts />
+        </TestCaseResult>
+      </TestCases>
+    </TestResult>
+    <TestResult TestName="UsingSerializer.Serialize_DINT">
+      <TestCases>
+        <TestCaseResult Id="6" Parameter="" Result="Passed">
+          <FailedAsserts />
+        </TestCaseResult>
+      </TestCases>
+    </TestResult>
+    <TestResult TestName="UsingSerializer.Serialize_STRING">
+      <TestCases>
+        <TestCaseResult Id="7" Parameter="" Result="Passed">
+          <FailedAsserts />
+        </TestCaseResult>
+      </TestCases>
+    </TestResult>
+    <TestResult TestName="UsingSerializer.Serialize_INT_DINT">
+      <TestCases>
+        <TestCaseResult Id="8" Parameter="" Result="Passed">
+          <FailedAsserts />
+        </TestCaseResult>
+      </TestCases>
+    </TestResult>
+    <TestResult TestName="UsingSerializer.Serialize_NestedObject">
+      <TestCases>
+        <TestCaseResult Id="9" Parameter="" Result="Passed">
+          <FailedAsserts />
+        </TestCaseResult>
+      </TestCases>
+    </TestResult>
   </TestResults>
 </AxUnitTestResult>

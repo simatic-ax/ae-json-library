@@ -15,8 +15,8 @@ variables:
   IP_ADDRESS: "192.168.0.1"
   WATCHLISTS: "./watchlist"
 scripts:
-  load: sld -i "$BIN_FOLDER" -t "$IP_ADDRESS" -r --accept-security-disclaimer -l debug
-    --default-server-interface
+  load: sld -i "$BIN_FOLDER" -t "$IP_ADDRESS" -r --accept-security-disclaimer -l
+    debug --default-server-interface
   loadhwplc: sld -i "$BIN_FOLDER_HWPLC" -t "$IP_ADDRESS" -r
     --accept-security-disclaimer -l debug --default-server-interface
   watch: apax mon  -t "$IP_ADDRESS" -f "$WATCHLISTS/default.mon" -c
@@ -26,6 +26,9 @@ scripts:
   dlhwplc:
     - apax build
     - apax loadhwplc
+dependencies:
+  "@ax/system-strings": 2.0.13
+  "@simatic-ax/json": 0.0.5
 devDependencies:
   "@ax/sdk": 1.0.144
   "@simatic-ax/snippetscollection": 0.0.6
