@@ -27,7 +27,7 @@ Class UsingDeserializer
         //Getting JSON and convert it to ARRAY OF CHAR
         JSON_Entry := '{ "key1": "stringValue", "key2": 10, "key3": 1234, "key4": "1234"}';
         len:= Strings.ToArray(str := JSON_Entry, arr := buffer);
-
+ 
         //Give it to the deserializer
         deserializer.SetBuffer(REF(buffer));
 
