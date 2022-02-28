@@ -1,0 +1,40 @@
+<test-cases-meta>
+  <test-cases name="axunit_TestsExecuted">
+    <test-case id="0" name="UsingDeserializer.GetValue_BASIC_DATA_TYPES" result-variable="axunit_Test_0_Result" parameter="">
+      <source-location file="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" line="20" />
+    </test-case>
+    <test-case id="1" name="UsingDeserializer.GetValue_ARRAY" result-variable="axunit_Test_1_Result" parameter="">
+      <source-location file="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" line="87" />
+    </test-case>
+    <test-case id="2" name="UsingDeserializer.GetValue_Nested" result-variable="axunit_Test_2_Result" parameter="">
+      <source-location file="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" line="106" />
+    </test-case>
+    <test-case id="3" name="UsingDeserializer.GetValue_Nested_in_Nested" result-variable="axunit_Test_3_Result" parameter="">
+      <source-location file="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" line="138" />
+    </test-case>
+  </test-cases>
+  <assert-locations variable-name="axunit_assertionData" array-size="300">
+    <location id="0" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="38" end-line="38" />
+    <location id="1" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="39" end-line="39" />
+    <location id="2" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="45" end-line="45" />
+    <location id="3" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="46" end-line="46" />
+    <location id="4" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="52" end-line="52" />
+    <location id="5" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="53" end-line="53" />
+    <location id="6" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="59" end-line="59" />
+    <location id="7" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="60" end-line="60" />
+    <location id="8" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="67" end-line="67" />
+    <location id="9" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="68" end-line="68" />
+    <location id="10" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="74" end-line="74" />
+    <location id="11" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="75" end-line="75" />
+    <location id="12" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="10" end-column="10" start-line="81" end-line="81" />
+    <location id="13" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="10" end-column="10" start-line="82" end-line="82" />
+    <location id="14" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="100" end-line="100" />
+    <location id="15" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="101" end-line="101" />
+    <location id="16" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="122" end-line="122" />
+    <location id="17" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="123" end-line="123" />
+    <location id="18" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="132" end-line="132" />
+    <location id="19" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="133" end-line="133" />
+    <location id="20" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="157" end-line="157" />
+    <location id="21" source-name="d:\workspace\JSONShowcase\JSONShowcase\src\UsingDeserializer.st" start-column="9" end-column="9" start-line="158" end-line="158" />
+  </assert-locations>
+</test-cases-meta>

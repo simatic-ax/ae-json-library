@@ -1,0 +1,32 @@
+<AxUnitTestResult>
+  <TestResults>
+    <TestResult TestName="UsingDeserializer.GetValue_BASIC_DATA_TYPES">
+      <TestCases>
+        <TestCaseResult Id="0" Parameter="" Result="Passed">
+          <FailedAsserts />
+        </TestCaseResult>
+      </TestCases>
+    </TestResult>
+    <TestResult TestName="UsingDeserializer.GetValue_ARRAY">
+      <TestCases>
+        <TestCaseResult Id="1" Parameter="" Result="Passed">
+          <FailedAsserts />
+        </TestCaseResult>
+      </TestCases>
+    </TestResult>
+    <TestResult TestName="UsingDeserializer.GetValue_Nested">
+      <TestCases>
+        <TestCaseResult Id="2" Parameter="" Result="Passed">
+          <FailedAsserts />
+        </TestCaseResult>
+      </TestCases>
+    </TestResult>
+    <TestResult TestName="UsingDeserializer.GetValue_Nested_in_Nested">
+      <TestCases>
+        <TestCaseResult Id="3" Parameter="" Result="Passed">
+          <FailedAsserts />
+        </TestCaseResult>
+      </TestCases>
+    </TestResult>
+  </TestResults>
+</AxUnitTestResult>
