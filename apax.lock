@@ -369,10 +369,10 @@
     "@ax/system-math" "1.0.32"
     "@ax/system-strings" "2.0.13"
 
-"@simatic-ax/json@0.0.4":
-  version "0.0.4"
-  resolved "https://npm.pkg.github.com/download/@simatic-ax/json/0.0.4/5bb5c3eec1ae261b86b70247921e6968bbdfcb8deeed9e8d399c6cbab8eb00b1#4762ed9bbb802aaeab4ab24ff89362e84db6547a"
-  integrity sha512-SfELD9dr3gwG2LBum0Tum5o3HrcThWLjK1LE48yrHXmtR6HjmK6lpXkU0JOFAm7Wj36js8HfF6mLsCSC3Lk4tw==
+"@simatic-ax/json@0.0.5":
+  version "0.0.5"
+  resolved "https://npm.pkg.github.com/download/@simatic-ax/json/0.0.5/accacbe19ea57f5d433298568d80a29046f2cabe61b20a8d1402348ffc44b6d9#651fb5377ee619690f36756dc544fc9409123b8c"
+  integrity sha512-gSXcjTYOyrAC34yOg5xUdQfUiLTh3bFFb4HXi2kQq3VKe4Knqy/G8UKU4RRvvEIYhWemb9mRYyxvpQyMg9zMWQ==
   dependencies:
     "@ax/system-strings" "2.0.13"
     "@simatic-ax/conversion" "0.0.7"

@@ -1,15 +1,36 @@
-name: json-showcase
-version: 0.0.0
+name: '@simatic-ax/ae-json-library'
+version: 0.0.1
 type: app
+author: Siemens AG
 targets:
+  - "plcsim"
   - "1500"
   - axunit-llvm
+variables:
+  APAX_BUILD_ARGS:
+    - --debug
+    - --log Trace
+  BIN_FOLDER: "./bin/plcsim"
+  BIN_FOLDER_HWPLC: "./bin/1500"
+  IP_ADDRESS: "192.168.0.1"
+  WATCHLISTS: "./watchlist"
+scripts:
+  load: sld -i "$BIN_FOLDER" -t "$IP_ADDRESS" -r --accept-security-disclaimer -l
+    debug --default-server-interface
+  loadhwplc: sld -i "$BIN_FOLDER_HWPLC" -t "$IP_ADDRESS" -r
+    --accept-security-disclaimer -l debug --default-server-interface
+  watch: apax mon  -t "$IP_ADDRESS" -f "$WATCHLISTS/default.mon" -c
+  dlsim:
+    - apax build
+    - apax load
+  dlhwplc:
+    - apax build
+    - apax loadhwplc
+dependencies:
+  "@ax/system-strings": 2.0.13
+  "@simatic-ax/json": 0.0.5
 devDependencies:
   "@ax/sdk": 1.0.144
   "@simatic-ax/snippetscollection": 0.0.6
-dependencies:
-  "@ax/system-strings": 2.0.13
-  "@simatic-ax/conversion": 0.0.7
-  "@simatic-ax/json": 0.0.4
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
