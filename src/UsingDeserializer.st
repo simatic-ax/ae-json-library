@@ -29,6 +29,9 @@ Class UsingDeserializer
         len:= Strings.ToArray(str := JSON_Entry, arr := buffer);
         //other comment
         //blabla
+
+
+        //testcomment
         //Give it to the deserializer
         deserializer.SetBuffer(REF(buffer));
 
