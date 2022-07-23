@@ -27,11 +27,11 @@ scripts:
     - apax build
     - apax loadhwplc
 dependencies:
-  "@ax/system-strings": 2.1.6
-  "@simatic-ax/json": 0.2.0
+  "@ax/system-strings": 3.0.4
+  "@simatic-ax/json": 1.2.0
   "@ax/simatic-1500-clocks": 1.2.11
 devDependencies:
-  "@ax/sdk": 1.0.175
+  "@ax/sdk": 2.0.3
   "@simatic-ax/snippetscollection": 0.0.13
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
