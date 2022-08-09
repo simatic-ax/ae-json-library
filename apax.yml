@@ -29,7 +29,7 @@ scripts:
 dependencies:
   "@ax/system-strings": 3.0.4
   "@simatic-ax/json": 1.2.0
-  "@ax/simatic-1500-clocks": 1.2.11
+  "@ax/simatic-1500-clocks": 2.0.1
 devDependencies:
   "@ax/sdk": 2.0.3
   "@simatic-ax/snippetscollection": 0.0.13

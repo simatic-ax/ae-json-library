@@ -314,9 +314,9 @@
     }
   },
   "@ax/simatic-1500-clocks": {
-    "version": "1.2.11",
-    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/simatic-1500-clocks/-/simatic-1500-clocks-1.2.11.tgz",
-    "integrity": "sha512-9epebg98OflHmHcrwc+vMyiDE8AP2/Q2x+bjKW9T3DnyBZGg6kIp+pjB1IvPUUxWvBmQ3e8LBiUPXLH70GmIUg=="
+    "version": "2.0.1",
+    "resolved": "https://apax-prod-734703289705.d.codeartifact.eu-central-1.amazonaws.com:443/npm/ax/@ax/simatic-1500-clocks/-/simatic-1500-clocks-2.0.1.tgz",
+    "integrity": "sha512-f8NTZ52hG7okwGUjcI/9KnMCE3eBwLsyc9apGxRRls3DTUuvVmS+JomO5I0c9NZnhOwIff0+m00BlC0VlSOEVQ=="
   },
   "@ax/sld": {
     "version": "0.12.1",
