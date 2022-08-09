@@ -1,20 +1,18 @@
 
-	
+	
 Simatic
-AxSimatic
+AxSimatic
+Json
+Simatic.Ax
 
 Conversion
 Simatic.Ax
 ArraysSimatic.Ax.Conversion 
 IntegerSimatic.Ax.Conversion 
-StringsSimatic.Ax.Conversion
-Json
-Simatic.Ax
-AxUnit
-AssertAxUnit
-MockingAxUnití*è
+StringsSimatic.Ax.Conversion(
+ToArraySimatic.Ax.Conversion.Stringsî*ë
 
-Simatic.Ax.JsonDeserializer:ë
+Simatic.Ax.JsonDeserializer :ë
 
 Simatic.Ax.Jsonbuffer"rp
 0
@@ -278,76 +276,18 @@ startIndex"
 
 Simatic.Ax.Jsonvalue"	
 ULINT"
-BOOL*Ì
-+
-$GLOBALUsingDeserializer"
-TestFixture:>
-
-$GLOBALdeserializer"!
-
-Simatic.Ax.JsonDeserializer:K
-
-$GLOBALbuffer"42
-!
-$GLOBALARRAY [0..999] OF CHARÁ
-CHAR:%
+BOOLª2∏
+(
+Simatic.Ax.JsonIJsonContainerElementã
+
+Simatic.Ax.Json
+AddElement>
 
-$GLOBAL
-JSON_Entry"
-
-STRING:
-
-$GLOBALkey"
-
-STRING:
-
-$GLOBALlen"
-DINT:!
-
-$GLOBALkeyFound"
-BOOLB.
-,
-$GLOBALGetValue_BASIC_DATA_TYPES"
-TestB#
-!
-$GLOBALGetValue_ARRAY"
-TestB$
-"
-$GLOBALGetValue_Nested"
-TestB.
-,
-$GLOBALGetValue_Nested_in_Nested"
-Test`^
-'
-Simatic.Ax.ConversionConversionMode
-WORD
-NONE
-0
-
-FORCE_SIGN
-1"
-0¬ø
- 
-Simatic.Ax.JsonJsonValueKind
-INT
-_Array
-2
-_False
-6
-_Null
-7
-_Number
-4
-_Object
-1
-_String
-3
-_True
-5
-
-_Undefined
-0"
-0˛2˚
+Simatic.Ax.Jsonelem"!
+
+Simatic.Ax.JsonIJsonElement"*
+(
+Simatic.Ax.JsonIJsonContainerElementÓ2Î
 '
 Simatic.Ax.JsonIJsonElementMuteable&
 
@@ -356,16 +296,7 @@ _Undefined
 
 Simatic.Ax.JsonGetNext")
 '
-Simatic.Ax.JsonIJsonElementMuteable_
-
-Simatic.Ax.Json
-AddElement>
-
-Simatic.Ax.Jsonelem"!
-
-Simatic.Ax.JsonIJsonElementı2Ú
-
-Simatic.Ax.JsonIJsonElement)
+Simatic.Ax.JsonIJsonElementMuteable)
 
 Simatic.Ax.JsonToString"
 
@@ -378,9 +309,18 @@ AddElement>
 Simatic.Ax.Json#REF_TO Simatic.Ax.Json.JsonDocument!
 
 Simatic.Ax.JsonJsonDocument"
-BOOLá*Ñ
+BOOLÄ2~
 
-Simatic.Ax.JsonJsonDocument:Y
+Simatic.Ax.JsonIJsonElement[
+
+Simatic.Ax.JsonInsert>
+
+Simatic.Ax.Jsonelem"!
+
+Simatic.Ax.JsonIJsonElement∞	*≠	
+
+Simatic.Ax.JsonJsonDocument 2(
+Simatic.Ax.JsonIJsonContainerElement:Y
 
 Simatic.Ax.Jsonbuffer"<:
 )
@@ -438,14 +378,22 @@ $
 !
 Simatic.Ax.JsonGetRootElement"!
 
-Simatic.Ax.JsonIJsonElementB_
+Simatic.Ax.JsonIJsonElementBã
 
 Simatic.Ax.Json
 AddElement>
 
 Simatic.Ax.Jsonelem"!
 
-Simatic.Ax.JsonIJsonElementﬁ*€
+Simatic.Ax.JsonIJsonElement"*
+(
+Simatic.Ax.JsonIJsonContainerElementBN
+
+Simatic.Ax.JsonClearBuffer,
+
+Simatic.Ax.Jsonhard"
+BOOL*
+0⁄*◊
 &
 Simatic.Ax.JsonAbstractJsonElement 2'
 Simatic.Ax.JsonIJsonElementMuteable2
@@ -487,10 +435,9 @@ AddElement>
 
 Simatic.Ax.JsonGetNext")
 '
-Simatic.Ax.JsonIJsonElementMuteableB_
-
-Simatic.Ax.Json
-AddElement>
+Simatic.Ax.JsonIJsonElementMuteableB[
+
+Simatic.Ax.JsonInsert>
 
 Simatic.Ax.Jsonelem"!
 
@@ -507,9 +454,10 @@ AddElement>
 Simatic.Ax.Json#REF_TO Simatic.Ax.Json.JsonDocument!
 
 Simatic.Ax.JsonJsonDocument"
-BOOLä*á
-!
-Simatic.Ax.JsonBaseJsonNumber*&
+BOOL∫*∑
+Q
+Simatic.Ax.JsonBaseJsonNumber".
+,axcode:docs-v0:@simatic-ax/json:../README.md*&
 Simatic.Ax.JsonAbstractJsonElementBe
 #
 Simatic.Ax.JsonToStringHelper0
@@ -531,9 +479,9 @@ AddElement>
 Simatic.Ax.Json#REF_TO Simatic.Ax.Json.JsonDocument!
 
 Simatic.Ax.JsonJsonDocument"
-BOOL¡*æ
+BOOL√*¿
 
-Simatic.Ax.JsonJsonBoolean*!
+Simatic.Ax.JsonJsonBoolean *!
 Simatic.Ax.JsonBaseJsonNumber:$
 
 Simatic.Ax.JsonValue"
@@ -550,9 +498,9 @@ AddElement>
 Simatic.Ax.Json#REF_TO Simatic.Ax.Json.JsonDocument!
 
 Simatic.Ax.JsonJsonDocument"
-BOOLñ*ì
+BOOLò*ï
 
-Simatic.Ax.JsonJsonDInt*!
+Simatic.Ax.JsonJsonDInt *!
 Simatic.Ax.JsonBaseJsonNumber:$
 
 Simatic.Ax.JsonValue"
@@ -560,9 +508,9 @@ AddElement>
 
 Simatic.Ax.JsonToString"
 
-STRINGî*ë
+STRINGñ*ì
 
-Simatic.Ax.JsonJsonInt*!
+Simatic.Ax.JsonJsonInt *!
 Simatic.Ax.JsonBaseJsonNumber:#
 
 Simatic.Ax.JsonValue"
@@ -570,9 +518,9 @@ AddElement>
 
 Simatic.Ax.JsonToString"
 
-STRINGñ*ì
+STRINGò*ï
 
-Simatic.Ax.JsonJsonLInt*!
+Simatic.Ax.JsonJsonLInt *!
 Simatic.Ax.JsonBaseJsonNumber:$
 
 Simatic.Ax.JsonValue"
@@ -581,18 +529,8 @@ AddElement>
 Simatic.Ax.JsonToString"
 
 STRINGò*ï
-
-Simatic.Ax.Json	JsonUSInt*!
-Simatic.Ax.JsonBaseJsonNumber:%
-
-Simatic.Ax.JsonValue"	
-USINTB+
 
-Simatic.Ax.JsonToString"
-
-STRINGñ*ì
-
-Simatic.Ax.JsonJsonSInt*!
+Simatic.Ax.JsonJsonSInt *!
 Simatic.Ax.JsonBaseJsonNumber:$
 
 Simatic.Ax.JsonValue"
@@ -600,9 +538,29 @@ AddElement>
 
 Simatic.Ax.JsonToString"
 
-STRING‚*ﬂ
+STRINGò*ï
+
+Simatic.Ax.JsonJsonUInt *!
+Simatic.Ax.JsonBaseJsonNumber:$
+
+Simatic.Ax.JsonValue"
+UINTB+
+
+Simatic.Ax.JsonToString"
+
+STRINGö*ó
+
+Simatic.Ax.Json	JsonUSInt *!
+Simatic.Ax.JsonBaseJsonNumber:%
+
+Simatic.Ax.JsonValue"	
+USINTB+
+
+Simatic.Ax.JsonToString"
+
+STRING‰*·
 %
-Simatic.Ax.JsonDeserializedObject:,
+Simatic.Ax.JsonDeserializedObject :,
 !
 Simatic.Ax.JsonKEY_STARTINDEX"
 INT:*
@@ -614,11 +572,12 @@ AddElement>
 INT:,
 !
 Simatic.Ax.JsonVALUE_ENDINDEX"
-INT£*†
+INT˙*˜
 
 Simatic.Ax.Json
-JsonObject*&
-Simatic.Ax.JsonAbstractJsonElement:N
+JsonObject *&
+Simatic.Ax.JsonAbstractJsonElement2(
+Simatic.Ax.JsonIJsonContainerElement:N
 !
 Simatic.Ax.Json_lastElement")
 '
@@ -639,17 +598,19 @@ JsonObject*&
 Simatic.Ax.Json#REF_TO Simatic.Ax.Json.JsonDocument!
 
 Simatic.Ax.JsonJsonDocument"
-BOOLBa
+BOOLBã
 
 Simatic.Ax.Json
-AddElement>
+AddElement>
 
 Simatic.Ax.Jsonelem"!
 
-Simatic.Ax.JsonIJsonElement«*ƒ
+Simatic.Ax.JsonIJsonElement"*
+(
+Simatic.Ax.JsonIJsonContainerElement…*∆
 
 Simatic.Ax.Json
-JsonString*&
+JsonString *&
 Simatic.Ax.JsonAbstractJsonElement:&
 
 Simatic.Ax.JsonValue"
@@ -667,100 +628,16 @@ JsonString*&
 Simatic.Ax.Json#REF_TO Simatic.Ax.Json.JsonDocument!
 
 Simatic.Ax.JsonJsonDocument"
-BOOL∏*µ
-)
-$GLOBALUsingSerializer"
-TestFixture:3
-
-$GLOBALdoc"!
-
-Simatic.Ax.JsonJsonDocument:H
-
-$GLOBALcmpBuff"20
- 
-$GLOBALARRAY [0..20] OF CHAR
-CHAR:
-
-$GLOBALstr"
+BOOL`^
+'
+Simatic.Ax.ConversionConversionMode
+WORD
+NONE
+0
 
-STRING:
-
-$GLOBALs"
-
-STRING:b
-
-$GLOBAL	myBoolean" 
-
-Simatic.Ax.JsonJsonBoolean*("&
-
-Value
-1
-
-Key
-	myBoolean:Y
-
-$GLOBALmyInt"
-
-Simatic.Ax.JsonJsonInt*'"%
-
-Value
-1234
-
-Key	
-myInt:`
-
-$GLOBALmyDint"
-
-Simatic.Ax.JsonJsonDInt*,"*
-
-Value
-
-12345678
-
-Key
-
-myDint:o
-
-$GLOBALmyString"
-
-Simatic.Ax.Json
-JsonString*7"5
-
-Value
-this is my string
-
-Key
-
-myString:O
-
-$GLOBALmyObject"
-
-Simatic.Ax.Json
-JsonObject*"
-
-Key
-
-myObjectB&
-$
-$GLOBALSerialize_BOOLEAN"
-TestB"
- 
-$GLOBALSerialize_INT"
-TestB#
-!
-$GLOBALSerialize_DINT"
-TestB%
-#
-$GLOBALSerialize_STRING"
-TestB'
-%
-$GLOBALSerialize_INT_DINT"
-TestB+
-)
-$GLOBALSerialize_NestedObject"
-Test2
-
-AxUnit.MockingIPayload*∫
+FORCE_SIGN
+1"
+0*∫
 )
 Simatic.Ax.ConversionAnyIntToString,
 
@@ -956,19 +833,65 @@ STRING[21]CHAR*è
 
 Simatic.Ax.Conversionvalue"	
 ULINT"
-BOOL*⁄
-(
-Simatic.Ax.Conversion.StringsToArray4
-$
-Simatic.Ax.Conversion.Stringsstr"
+BOOL*˛
+4
+%Simatic.Ax.Conversion.Strings.ToArrayOfCharCount<
+,
+%Simatic.Ax.Conversion.Strings.ToArraystr"
 
-STRINGn
-$
-Simatic.Ax.Conversion.Stringsarr"DB
-2
-Simatic.Ax.Conversion.StringsARRAY [*] OF CHAR
+STRING~
+,
+%Simatic.Ax.Conversion.Strings.ToArrayarr"LJ
+:
+%Simatic.Ax.Conversion.Strings.ToArrayARRAY [*] OF CHAR
 CHAR"
-DINT*û
+DINT*˚
+1
+%Simatic.Ax.Conversion.Strings.ToArrayOfLint<
+,
+%Simatic.Ax.Conversion.Strings.ToArraystr"
+
+STRING~
+,
+%Simatic.Ax.Conversion.Strings.ToArrayarr"LJ
+:
+%Simatic.Ax.Conversion.Strings.ToArrayARRAY [*] OF LINT
+LINT"
+BOOL*Ò
+7
+%Simatic.Ax.Conversion.Strings.ToArrayGetArrayBounds<
+,
+%Simatic.Ax.Conversion.Strings.ToArraystr"
+
+STRING;
+.
+%Simatic.Ax.Conversion.Strings.ToArraylower"
+INT;
+.
+%Simatic.Ax.Conversion.Strings.ToArrayupper"
+INT*Ä
+6
+%Simatic.Ax.Conversion.Strings.ToArrayOfLintCount<
+,
+%Simatic.Ax.Conversion.Strings.ToArraystr"
+
+STRING~
+,
+%Simatic.Ax.Conversion.Strings.ToArrayarr"LJ
+:
+%Simatic.Ax.Conversion.Strings.ToArrayARRAY [*] OF LINT
+LINT"
+DINT*ç
+%
+Simatic.Ax.ConversionStringToBool,
+
+Simatic.Ax.Conversionstr"
+
+STRING,
+
+Simatic.Ax.Conversionvalue"
+BOOL"
+BOOL*û
 &
 Simatic.Ax.Conversion.StringsToInt4
 $
@@ -1048,879 +971,29 @@ $
 &
 Simatic.Ax.Conversion.Stringsvalue"	
 ULINT"
-BOOL*f
-
-AxUnit.AssertEqual&
-
-AxUnit.Assertexpected"
-INT$
-
-AxUnit.Assertactual"
-INT*h
-
-AxUnit.AssertEqual'
-
-AxUnit.Assertexpected"
-SINT%
-
-AxUnit.Assertactual"
-SINT*h
-
-AxUnit.AssertEqual'
-
-AxUnit.Assertexpected"
-DINT%
-
-AxUnit.Assertactual"
-DINT*h
-
-AxUnit.AssertEqual'
-
-AxUnit.Assertexpected"
-LINT%
-
-AxUnit.Assertactual"
-LINT*j
-
-AxUnit.AssertEqual(
-
-AxUnit.Assertexpected"	
-USINT&
-
-AxUnit.Assertactual"	
-USINT*h
-
-AxUnit.AssertEqual'
-
-AxUnit.Assertexpected"
-UINT%
-
-AxUnit.Assertactual"
-UINT*j
-
-AxUnit.AssertEqual(
-
-AxUnit.Assertexpected"	
-UDINT&
-
-AxUnit.Assertactual"	
-UDINT*j
-
-AxUnit.AssertEqual(
-
-AxUnit.Assertexpected"	
-ULINT&
-
-AxUnit.Assertactual"	
-ULINT*h
-
-AxUnit.AssertEqual'
-
-AxUnit.Assertexpected"
-REAL%
-
-AxUnit.Assertactual"
-REAL*j
-
-AxUnit.AssertEqual(
-
-AxUnit.Assertexpected"	
-LREAL&
-
-AxUnit.Assertactual"	
-LREAL*h
-
-AxUnit.AssertEqual'
-
-AxUnit.Assertexpected"
-BOOL%
-
-AxUnit.Assertactual"
-BOOL*h
-
-AxUnit.AssertEqual'
-
-AxUnit.Assertexpected"
-BYTE%
-
-AxUnit.Assertactual"
-BYTE*h
-
-AxUnit.AssertEqual'
-
-AxUnit.Assertexpected"
-WORD%
-
-AxUnit.Assertactual"
-WORD*j
-
-AxUnit.AssertEqual(
-
-AxUnit.Assertexpected"	
-DWORD&
-
-AxUnit.Assertactual"	
-DWORD*j
-
-AxUnit.AssertEqual(
-
-AxUnit.Assertexpected"	
-LWORD&
-
-AxUnit.Assertactual"	
-LWORD*l
-
-AxUnit.AssertEqual)
-
-AxUnit.Assertexpected"
-
-STRING'
-
-AxUnit.Assertactual"
-
-STRING*n
-
-AxUnit.AssertEqual*
-
-AxUnit.Assertexpected"
-	WSTRING(
-
-AxUnit.Assertactual"
-	WSTRING*i
-
-AxUnit.AssertNotEqual&
-
-AxUnit.Assertexpected"
-INT$
-
-AxUnit.Assertactual"
-INT*k
-
-AxUnit.AssertNotEqual'
-
-AxUnit.Assertexpected"
-SINT%
-
-AxUnit.Assertactual"
-SINT*k
-
-AxUnit.AssertNotEqual'
-
-AxUnit.Assertexpected"
-DINT%
-
-AxUnit.Assertactual"
-DINT*k
-
-AxUnit.AssertNotEqual'
-
-AxUnit.Assertexpected"
-LINT%
-
-AxUnit.Assertactual"
-LINT*m
-
-AxUnit.AssertNotEqual(
-
-AxUnit.Assertexpected"	
-USINT&
-
-AxUnit.Assertactual"	
-USINT*k
-
-AxUnit.AssertNotEqual'
-
-AxUnit.Assertexpected"
-UINT%
-
-AxUnit.Assertactual"
-UINT*m
-
-AxUnit.AssertNotEqual(
-
-AxUnit.Assertexpected"	
-UDINT&
-
-AxUnit.Assertactual"	
-UDINT*m
-
-AxUnit.AssertNotEqual(
-
-AxUnit.Assertexpected"	
-ULINT&
-
-AxUnit.Assertactual"	
-ULINT*k
-
-AxUnit.AssertNotEqual'
-
-AxUnit.Assertexpected"
-REAL%
-
-AxUnit.Assertactual"
-REAL*m
-
-AxUnit.AssertNotEqual(
-
-AxUnit.Assertexpected"	
-LREAL&
-
-AxUnit.Assertactual"	
-LREAL*k
-
-AxUnit.AssertNotEqual'
-
-AxUnit.Assertexpected"
-BOOL%
-
-AxUnit.Assertactual"
-BOOL*k
-
-AxUnit.AssertNotEqual'
-
-AxUnit.Assertexpected"
-BYTE%
-
-AxUnit.Assertactual"
-BYTE*k
-
-AxUnit.AssertNotEqual'
-
-AxUnit.Assertexpected"
-WORD%
-
-AxUnit.Assertactual"
-WORD*m
-
-AxUnit.AssertNotEqual(
-
-AxUnit.Assertexpected"	
-DWORD&
-
-AxUnit.Assertactual"	
-DWORD*m
-
-AxUnit.AssertNotEqual(
-
-AxUnit.Assertexpected"	
-LWORD&
-
-AxUnit.Assertactual"	
-LWORD*o
-
-AxUnit.AssertNotEqual)
-
-AxUnit.Assertexpected"
-
-STRING'
-
-AxUnit.Assertactual"
-
-STRING*q
-
-AxUnit.AssertNotEqual*
-
-AxUnit.Assertexpected"
-	WSTRING(
-
-AxUnit.Assertactual"
-	WSTRING*g
-
-AxUnit.AssertGreaterThan"
-
-AxUnit.Assertleft"
-INT#
-
-AxUnit.Assertright"
-INT*i
-
-AxUnit.AssertGreaterThan#
-
-AxUnit.Assertleft"
-SINT$
-
-AxUnit.Assertright"
-SINT*i
-
-AxUnit.AssertGreaterThan#
-
-AxUnit.Assertleft"
-DINT$
-
-AxUnit.Assertright"
-DINT*i
-
-AxUnit.AssertGreaterThan#
-
-AxUnit.Assertleft"
-LINT$
-
-AxUnit.Assertright"
-LINT*k
-
-AxUnit.AssertGreaterThan$
-
-AxUnit.Assertleft"	
-USINT%
-
-AxUnit.Assertright"	
-USINT*i
-
-AxUnit.AssertGreaterThan#
-
-AxUnit.Assertleft"
-UINT$
-
-AxUnit.Assertright"
-UINT*k
-
-AxUnit.AssertGreaterThan$
-
-AxUnit.Assertleft"	
-UDINT%
-
-AxUnit.Assertright"	
-UDINT*k
-
-AxUnit.AssertGreaterThan$
-
-AxUnit.Assertleft"	
-ULINT%
-
-AxUnit.Assertright"	
-ULINT*i
-
-AxUnit.AssertGreaterThan#
-
-AxUnit.Assertleft"
-REAL$
-
-AxUnit.Assertright"
-REAL*k
-
-AxUnit.AssertGreaterThan$
-
-AxUnit.Assertleft"	
-LREAL%
-
-AxUnit.Assertright"	
-LREAL*d
-
-AxUnit.AssertLessThan"
-
-AxUnit.Assertleft"
-INT#
-
-AxUnit.Assertright"
-INT*f
-
-AxUnit.AssertLessThan#
-
-AxUnit.Assertleft"
-SINT$
-
-AxUnit.Assertright"
-SINT*f
-
-AxUnit.AssertLessThan#
-
-AxUnit.Assertleft"
-DINT$
-
-AxUnit.Assertright"
-DINT*f
-
-AxUnit.AssertLessThan#
-
-AxUnit.Assertleft"
-LINT$
-
-AxUnit.Assertright"
-LINT*h
-
-AxUnit.AssertLessThan$
-
-AxUnit.Assertleft"	
-USINT%
-
-AxUnit.Assertright"	
-USINT*f
-
-AxUnit.AssertLessThan#
-
-AxUnit.Assertleft"
-UINT$
-
-AxUnit.Assertright"
-UINT*h
-
-AxUnit.AssertLessThan$
-
-AxUnit.Assertleft"	
-UDINT%
-
-AxUnit.Assertright"	
-UDINT*h
-
-AxUnit.AssertLessThan$
-
-AxUnit.Assertleft"	
-ULINT%
-
-AxUnit.Assertright"	
-ULINT*f
-
-AxUnit.AssertLessThan#
-
-AxUnit.Assertleft"
-REAL$
-
-AxUnit.Assertright"
-REAL*h
-
-AxUnit.AssertLessThan$
-
-AxUnit.Assertleft"	
-LREAL%
-
-AxUnit.Assertright"	
-LREAL*À
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINTB
-
-AxUnitvalue"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTEC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*¶
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"
-BOOLC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*¶
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"
-WORDC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*ß
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"	
-DWORDC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*ß
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"	
-LWORDC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*¶
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"
-BYTEC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*¶
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"
-SINTC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*•
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"
-INTC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*¶
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"
-DINTC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*¶
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"
-LINTC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*ß
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"	
-USINTC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*¶
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"
-UINTC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*ß
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"	
-UDINTC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*ß
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"	
-ULINTC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*¶
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"
-REALC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*ß
-
-AxUnitWriteToArray
-
-AxUnitoffset"
-UINT
-
-AxUnitvalue"	
-LREALC
-
-AxUnitbuffer"-+
-
-AxUnitARRAY [*] OF BYTE
-BYTE"
-UINT*f
-
-AxUnitToByteArray
-
-AxUnitvalue"
-BOOL".,
-
-AxUnitARRAY [0..0] OF BYTE 
-BYTE*f
-
-AxUnitToByteArray
-
-AxUnitvalue"
-BYTE".,
-
-AxUnitARRAY [0..0] OF BYTE 
-BYTE*f
-
-AxUnitToByteArray
-
-AxUnitvalue"
-SINT".,
-
-AxUnitARRAY [0..0] OF BYTE 
-BYTE*g
-
-AxUnitToByteArray
-
-AxUnitvalue"	
-USINT".,
-
-AxUnitARRAY [0..0] OF BYTE 
-BYTE*h
-
-AxUnitToByteArray
-
-AxUnitvalue"
-WORD"0.
-
-AxUnitARRAY [0..1] OF BYTE
-BYTE*i
-
-AxUnitToByteArray
-
-AxUnitvalue"	
-DWORD"0.
-
-AxUnitARRAY [0..3] OF BYTE
-BYTE*i
-
-AxUnitToByteArray
-
-AxUnitvalue"	
-UDINT"0.
-
-AxUnitARRAY [0..3] OF BYTE
-BYTE*g
-
-AxUnitToByteArray
-
-AxUnitvalue"
-INT"0.
-
-AxUnitARRAY [0..1] OF BYTE
-BYTE*h
-
-AxUnitToByteArray
-
-AxUnitvalue"
-UINT"0.
-
-AxUnitARRAY [0..1] OF BYTE
-BYTE*h
-
-AxUnitToByteArray
-
-AxUnitvalue"
-DINT"0.
-
-AxUnitARRAY [0..3] OF BYTE
-BYTE*h
-
-AxUnitToByteArray
-
-AxUnitvalue"
-LINT"0.
-
-AxUnitARRAY [0..7] OF BYTE
-BYTE*h
-
-AxUnitToByteArray
-
-AxUnitvalue"
-REAL"0.
-
-AxUnitARRAY [0..3] OF BYTE
-BYTE*i
-
-AxUnitToByteArray
-
-AxUnitvalue"	
-LWORD"0.
-
-AxUnitARRAY [0..7] OF BYTE
-BYTE*i
-
-AxUnitToByteArray
-
-AxUnitvalue"	
-ULINT"0.
-
-AxUnitARRAY [0..7] OF BYTE
-BYTE*i
-
-AxUnitToByteArray
-
-AxUnitvalue"	
-LREAL"0.
-
-AxUnitARRAY [0..7] OF BYTE
-BYTE*à
-!
-AxUnitToByteArray64"
-inline
-
-AxUnitvalue"	
-LWORDC
-
-AxUnitarr"0.
-
-AxUnitARRAY [0..7] OF BYTE
-BYTE*à
-!
-AxUnitToByteArray32"
-inline
-
-AxUnitvalue"	
-DWORDC
-
-AxUnitarr"0.
-
-AxUnitARRAY [0..3] OF BYTE
-BYTE*á
-!
-AxUnitToByteArray16"
-inline
-
-AxUnitvalue"
-WORDC
-
-AxUnitarr"0.
-
-AxUnitARRAY [0..1] OF BYTE
-BYTE*Ñ
- 
-AxUnitToByteArray8"
-inline
-
-AxUnitvalue"
-BYTEA
-
-AxUnitarr".,
-
-AxUnitARRAY [0..0] OF BYTE 
-BYTE*à
-
-AxUnit.MockingMock7
-'
-AxUnit.MockingmockeeFn"
-	mandatory"
-
-STRING5
-%
-AxUnit.MockingmockFn"
-	mandatory"
-
-STRING*≈
-
-AxUnit.MockingMock7
-'
-AxUnit.MockingmockeeFn"
-	mandatory"
-
-STRING5
-%
-AxUnit.MockingmockFn"
-	mandatory"
-
-STRING;
-
-AxUnit.Mockingpayload"
-
-AxUnit.MockingIPayload*<
-
-AxUnit.Mocking
-GetPayload"
-
-AxUnit.MockingIPayload2
+BOOL2
 
-$GLOBAL	MyProgram:®
+$GLOBAL	MyProgram:ç
 
-$GLOBALMyConfiguration*+
+$GLOBALMyConfiguration"
+
+$GLOBALstr"
+
+STRING"!
+
+$GLOBALinNanos1"
+LINT"!
+
+$GLOBALinNanos2"
+LINT*+
 
 $GLOBALP1Main
-$GLOBAL	MyProgram2]
+$GLOBAL	MyProgram2\
 
-$GLOBALMainDefaultIntervalTask3"1
-
-	tInterval
-
-1000000000
+$GLOBALMainDefaultIntervalTask2"0
+
+	tInterval
+	500000000
 
 	iPriority
 1
