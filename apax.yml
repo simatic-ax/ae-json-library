@@ -28,7 +28,7 @@ scripts:
     - apax loadhwplc
 dependencies:
   "@ax/system-strings": 3.0.4
-  "@simatic-ax/json": 1.2.0
+  "@simatic-ax/json": 1.3.0
   "@ax/simatic-1500-clocks": 2.0.1
 devDependencies:
   "@ax/sdk": 2.0.3
