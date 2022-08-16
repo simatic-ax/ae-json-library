@@ -547,9 +547,9 @@
     }
   },
   "@simatic-ax/json": {
-    "version": "1.2.0",
-    "resolved": "https://npm.pkg.github.com/download/@simatic-ax/json/1.2.0/8d2cd8306d2ea0f8fe142a7290ceca310462875a9ac0794f7c9919915bce5b19",
-    "integrity": "sha512-6nCEGMefsUL6rdlwtTJHz+ha216oDk3SdpAbnloPLzILuLgGfSHpGxIhhvcdEl6Gm8v7BdwwRq+kxnjPpo33+A==",
+    "version": "1.3.0",
+    "resolved": "https://npm.pkg.github.com/download/@simatic-ax/json/1.3.0/1c915f60dee0cd09d4753ec2cdd102d9005353b9",
+    "integrity": "sha512-KTtpTM1EbHD3aL2DrBlR+2l8DC7v1EJe4DIdDzTIxnN3U8SmLwjjDoQfuwT3Ttgmkt3Dn05HIYiWf4/ZLwzA6A==",
     "dependencies": {
       "@ax/system-strings": "3.0.4",
       "@simatic-ax/conversion": "2.1.2"
