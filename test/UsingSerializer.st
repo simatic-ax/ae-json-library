@@ -66,7 +66,7 @@ Class UsingSerializer
     END_METHOD
 
     {Test}
-    METHOD PUBLIC Serialize_NestedObject
+    METHOD PUBLIC Serialize_and_reset_NestedObject
         myObject.AddElement(myInt);
         myObject.AddElement(myDint);
         
@@ -77,6 +77,22 @@ Class UsingSerializer
         
         str := Arrays.ToString(doc.buffer, 0, 67);
         Equal(expected := '{"myBoolean": true, "myObject": {"myInt": 1234, "myDint": 12345678}}', actual := str);
+
+
+        // Reset document
+        doc.Reset();
+        
+        // Create new document
+        myObject.AddElement(myInt);
+        myObject.AddElement(myDint);
+        
+        doc.AddElement(myBoolean);
+        doc.AddElement(myObject);
+
+        doc.Serialize(doc.buffer);
+        str := Arrays.ToString(doc.buffer, 0, 67);
+        Equal(expected := '{"myBoolean": true, "myObject": {"myInt": 1234, "myDint": 12345678}}', actual := str);
+
     END_METHOD
 
 END_CLASS

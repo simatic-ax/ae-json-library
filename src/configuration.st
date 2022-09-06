@@ -1,6 +1,6 @@
 USING Simatic.Ax.Json;
 CONFIGURATION MyConfiguration
-    TASK Main(Interval := T#500ms, Priority := 1);
+    TASK Main(Priority := 1);
     PROGRAM P1 WITH Main: MyProgram;
 
     VAR_GLOBAL
