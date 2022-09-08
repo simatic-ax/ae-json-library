@@ -1,3 +1,15 @@
-str
-inNanos1
-inNanos2
+# Active Step
+ActiveStep
+# result serialized document
+SerializedDocument1
+# Time for serializing [ns]
+TimeCreationDocument1
+# Parsing for myInt
+ParsedValue1
+
+# result serialized document2
+SerializedDocument2
+# Time for serializing  [ns]
+TimeCreationDocument2
+# Parsing for myDint
+ParsedValue2

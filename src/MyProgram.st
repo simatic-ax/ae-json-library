@@ -4,9 +4,13 @@ USING Siemens.Simatic.S71500.Clocks;
 
 PROGRAM MyProgram
     VAR_EXTERNAL
-        str : STRING;
-        inNanos1 : LINT;
-        inNanos2 : LINT;
+        ActiveStep : STRING;
+        SerializedDocument1 : STRING;
+        TimeCreationDocument1 : LINT;
+        ParsedValue1 : INT;
+        SerializedDocument2 : STRING;
+        TimeCreationDocument2 : LINT;
+        ParsedValue2 : DINT;
     END_VAR
     VAR
         measurement : RuntimeMeasurement;
@@ -19,41 +23,46 @@ PROGRAM MyProgram
         myObject : JsonObject := (Key := 'myObject');
         step : Steps;
         deserializer : Deserializer;
-        key : STRING;
         keyFound : BOOL;
-        intValue : INT;
+        keyArray : ARRAY[0..1] OF STRING := ['myObject', 'myDint'];
     END_VAR
-    VAR_TEMP
-        keyArray : ARRAY[0..1] OF STRING;
-    END_VAR
+
     CASE step OF
         Steps#CreateDocument1:
             // Create Document 1st object model
             // Expected Value: {"myInt": 1234}
+            ActiveStep := 'Create JSON Document {"myInt": 1234}';
             doc.AddElement(myInt);
             doc.Serialize(doc.buffer);
             step := Steps#SerializeDocument1
             ;
         Steps#SerializeDocument1:
             // Serialize Document 1st object model1
+            ActiveStep := 'Serialize JSON Document {"myInt": 1234}';
+            measurement.Start();
             doc.Serialize(doc.buffer);
+            timeOfOperations := measurement.Stop();
+            SerializedDocument1 := Arrays.ToString(doc.buffer);
+            TimeCreationDocument1 := measurement.GetElapsedNanoseconds();
             step := Steps#ParseDocument1
             ;
         Steps#ParseDocument1:
             // Parse Document 1st object model
+            ActiveStep := 'Parse for "myInt" JSON Document {"myInt": 1234}';
             deserializer.SetBuffer(REF(doc.buffer));
-            key := 'myInt';
-            keyFound := deserializer.TryParse(key, intValue);
+            keyFound := deserializer.TryParse('myInt', ParsedValue1);
             step := Steps#ResetJSonDocument1
             ;
         Steps#ResetJSonDocument1:
             // ResetJSonDocument 1st object model
+            ActiveStep := 'Reset JSON Document {"myInt": 1234}';
             doc.Reset();
             step := Steps#CreateDocument2
             ;
         Steps#CreateDocument2:
-            // Create Document 2nd object model (nested object)
-            // Expected Value: {"myBoolean": true, "myObject": {"myInt": 1234, "myDint": 12345678}}
+            // Create nested JSON document which looks like:
+            // {"myBoolean": true, "myObject": {"myInt": 1234, "myDint": 12345678}}
+            ActiveStep := 'Create JSON Document {"myBoolean": true, "myObject": {"myInt": 1234, "myDint": 12345678}}';
             myObject.AddElement(myInt);
             myObject.AddElement(myDint);
             doc.AddElement(myBoolean);
@@ -61,24 +70,26 @@ PROGRAM MyProgram
             step := Steps#SerializeDocument2
             ;
         Steps#SerializeDocument2:
-            // Serialize Document 2nd object model including time meassurement
+            // Serialize the document {"myBoolean": true, "myObject": {"myInt": 1234, "myDint": 12345678}}
+            ActiveStep := 'Serialize JSON Document {"myBoolean": true, "myObject": {"myInt": 1234, "myDint": 12345678}}';
             measurement.Start();
             doc.Serialize(doc.buffer);
             timeOfOperations := measurement.Stop();
-            inNanos1 := measurement.GetElapsedNanoseconds();
+            SerializedDocument2 := Arrays.ToString(doc.buffer);
+            TimeCreationDocument2 := measurement.GetElapsedNanoseconds();
             step := Steps#ParseDocument2;
             ;
         Steps#ParseDocument2:
-            // Parse Document 1st object model
+            // Parse Document for the value of the nested key `myObject.myDint` and expect `12345678`
             // Get Values from a nested element
+            ActiveStep := 'Parse for "myInt" JSON Document {"myBoolean": true, "myObject": {"myInt": 1234, "myDint": 12345678}}';
             deserializer.SetBuffer(REF(doc.buffer));
-            keyArray[0] := 'myObject';
-            keyArray[1] := 'myInt';
-            keyFound := deserializer.TryParse(keyArray, intValue);
+            keyFound := deserializer.TryParse(keyArray, ParsedValue2);
             step := Steps#ResetJSonDocument2;
             ;
         Steps#ResetJSonDocument2:
             // ResetJSonDocument 2nd configuration
+            ActiveStep := 'Reset JSON Document {"myBoolean": true, "myObject": {"myInt": 1234, "myDint": 12345678}}';
             doc.Reset();
             step := Steps#CreateDocument1;
             ;
