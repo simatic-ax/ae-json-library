@@ -1,3 +1,13 @@
-str
-inNanos1
-inNanos2
+# result serialized document1
+CreatedDocument1
+# Time for serializing [ns]
+TimeCreateDocument1
+# Parsing for myInt
+FoundValue1
+
+# result serialized document2
+CreatedDocument2
+# Time for serializing  [ns]
+TimeCreateDocument2
+# Parsing for myDint
+FoundValue2
