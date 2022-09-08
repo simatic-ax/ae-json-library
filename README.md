@@ -44,7 +44,7 @@ This application example consists of two parts.
    
       ![](docs/monuioutput.png)
 
-   1. Open the file `defaul.mon`
+   1. Open the file `default.mon`
    1. Enable monitoring
    1. Observe the values
 
