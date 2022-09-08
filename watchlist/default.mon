@@ -1,13 +1,15 @@
-# result serialized document1
-CreatedDocument1
+# Active Step
+ActiveStep
+# result serialized document
+SerializedDocument1
 # Time for serializing [ns]
-TimeCreateDocument1
+TimeCreationDocument1
 # Parsing for myInt
-FoundValue1
+ParsedValue1
 
 # result serialized document2
-CreatedDocument2
+SerializedDocument2
 # Time for serializing  [ns]
-TimeCreateDocument2
+TimeCreationDocument2
 # Parsing for myDint
-FoundValue2
+ParsedValue2

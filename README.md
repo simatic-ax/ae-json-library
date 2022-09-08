@@ -23,26 +23,18 @@ This application example consists of two parts.
       axcode ae-json-library
       ```
 
-1. Start a PLCSIM Advanced Instance. Download a TIA Portal created HWCN with a 1500 standard PLC (IP: Address 192.168.0.1).
+1. Start a PLCSIM Advanced Instance or using a 1500 PLC. Download a TIA Portal created HWCN with a 1500 standard PLC (Default IP Address 192.168.0.1).
 
 1. If not open, open a terminal in AX Code (`CTRL+SHIFT+ö`)
 
-1. Install dependencies
+1. Start the application example 
    
    ```cli
-   apax install -L
+   apax start [1500]
    ```
-1. Build in download the project to the PLC
-   
-   ```cli
-   apax dlsim
-   ```
-   
-   The project will be compiled and downloaded to the PLCSIM Advanced instance
+   > 1500 is required, if you use a real 1500 PLC instead of PLCSIM Advanced.
 
-1. Open the monitoring file mon.mon
-
-1. Go online
+   
  
 ## Contribution
 
