@@ -32,10 +32,8 @@ This application example consists of two parts.
    ```cli
    apax start [1500]
    ```
-   > 1500 is required, if you use a real 1500 PLC instead of PLCSIM Advanced.
+   > `1500` is required, if you use a real 1500 PLC instead of PLCSIM Advanced.
 
-   
- 
 ## Contribution
 
 Thanks for your interest in contributing. Anybody is free to report bugs, unclear documentation, and other problems regarding this repository in the Issues section or, even better, is free to propose any changes to this repository using pull requests.
