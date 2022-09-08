@@ -34,6 +34,23 @@ This application example consists of two parts.
    ```
    > `1500` is required, if you use a real 1500 PLC instead of PLCSIM Advanced.
 
+      Result:
+
+      After the Download you'll see following conten in the terminal. Exit by pressing `x`.
+
+      ![](docs/monoutput.png)
+
+1. Monitor voa mon-File:
+   
+      ![](docs/monuioutput.png)
+
+   1. Open the file `default.mon`
+   1. Enable monitoring
+   1. Observe the values
+
+
+
+
 ## Contribution
 
 Thanks for your interest in contributing. Anybody is free to report bugs, unclear documentation, and other problems regarding this repository in the Issues section or, even better, is free to propose any changes to this repository using pull requests.
