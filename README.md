@@ -5,8 +5,64 @@ This application example demonstrates the usage of the [JSON Library](https://gi
 
 This application example consists of two parts.
 
-1. Showing the usage of the library in a PLC Program, which can be downloaded to a 1500 PLC
+1. Showing the usage of the library in a PLC Program, which can be downloaded to a 1500 PLC or PLCSIM Advanced
 1. Many examples as UnitTest in the `test` folder
+
+
+### Description of the PLC program
+   
+   The PLC program executes different steps:
+
+   1. CreateDocument1 
+      Add an JSON element of type Integer with value `1234` in a empty JSON document `doc`
+   
+   1. SerializeDocument1
+
+      doc.Serialize(doc.buffer) serializes the JSON document `doc` into the array of char (doc.buffer).
+
+      Expected result in the array of char: `{"myInt": 1234}`
+   
+      In this step, the time for serializing will be measured and stored in the variable `TimeCreationDocument1`. The result od serializing will be stored in the string variable `SerializedDocument1`
+
+   1. ParseDocument1
+   
+      Parse the JSON document `doc` for the `key = myInt` and get the value `1234`
+      
+   1. ResetJSonDocument1
+
+      Delete all JSON elements in the JSON document `doc`. So it's possible to create a new JSON document with other JSON elements.
+   
+   1. CreateDocument2
+
+      Create a JSON document with nested JSON elements. Structure of nested JSON document:
+      
+      ```
+      doc 
+       |
+       +- myBoolean(value = true)
+       |
+       +- myObject -+- myInt(value = 1234)
+                    | 
+                    +- myDint(value = 12345678)
+      ```
+
+   
+   1. SerializeDocument2
+   
+      doc.Serialize(doc.buffer) serializes the JSON document `doc` into the array of char (doc.buffer).
+
+      Expected result in the array of char: `{"myBoolean": true, "myObject": {"myInt": 1234, "myDint": 12345678}}`
+
+      In this step, the time for serializing will be measured and stored in the variable `TimeCreationDocument2`. The result od serializing will be stored in the string variable `SerializedDocument2`
+
+
+   1. ParseDocument2
+
+      Parse the JSON document `doc` for the `key = myDint` and get the value `12345678`
+   
+   1. ResetJSonDocument2
+
+      Delete all JSON elements in the JSON document `doc`. So it's possible to create a new JSON document with other JSON elements.
 
 ## Execute the Application Example on the PLC (AX Code local)
 
@@ -20,9 +76,8 @@ This application example consists of two parts.
       Run the following commands in a CLI
       ```sh
       apax create @simatic-ax/ae-json-library --registry https://npm.pkg.github.com ae-json-library
+      axcode ae-json-library
       ```
-
-      AX Code should open automatically.
 
 1. Start a PLCSIM Advanced Instance or using a 1500 PLC. Download a TIA Portal created HWCN with a 1500 standard PLC (Default IP Address 192.168.0.1).
 
@@ -31,7 +86,6 @@ This application example consists of two parts.
       > IP_ADDRESS: "192.168.0.1"
       > ```
       
-
 
 1. If not open, open a terminal in AX Code (`CTRL+SHIFT+ö`)
 
@@ -55,8 +109,6 @@ This application example consists of two parts.
    1. Open the file `default.mon`
    1. Enable monitoring
    1. Observe the values
-
-
 
 
 ## Contribution
