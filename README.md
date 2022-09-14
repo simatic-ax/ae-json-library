@@ -8,6 +8,20 @@ This application example consists of two parts.
 1. Showing the usage of the library in a PLC Program, which can be downloaded to a 1500 PLC or PLCSIM Advanced
 1. Many examples as UnitTest in the `test` folder
 
+## Install the application example and open it locally
+
+1. Open a command line interface (CLI) and switch to the target folder like:
+      ```sh
+      D:
+      cd \Examples
+      ```
+1. Install the application example `AX Code`
+
+      Run the following commands in a CLI
+      ```sh
+      apax create @simatic-ax/ae-json-library --registry https://npm.pkg.github.com ae-json-library
+      axcode ae-json-library
+      ```
 
 ### Description of the PLC program
    
@@ -64,20 +78,7 @@ This application example consists of two parts.
 
       Delete all JSON elements in the JSON document `doc`. So it's possible to create a new JSON document with other JSON elements.
 
-## Execute the Application Example on the PLC (AX Code local)
-
-1. Open a command line interface (CLI) and switch to the target folder like:
-      ```sh
-      D:
-      cd \Examples
-      ```
-1. Install the application example `AX Code`
-
-      Run the following commands in a CLI
-      ```sh
-      apax create @simatic-ax/ae-json-library --registry https://npm.pkg.github.com ae-json-library
-      axcode ae-json-library
-      ```
+## Start the application example
 
 1. Start a PLCSIM Advanced Instance or using a 1500 PLC. Download a TIA Portal created HWCN with a 1500 standard PLC (Default IP Address 192.168.0.1).
 
