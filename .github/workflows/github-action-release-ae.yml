@@ -91,14 +91,14 @@ jobs:
           echo version: $VERSION >> apax.yml
           echo type: generic >> apax.yml  
           echo files:
-          echo  "  - "./template/watchlist""
-          echo  "  - "./template/test""
-          echo  "  - "./template/src""
-          echo  "  - "./template/docs""
-          echo  "  - "./template/README.md"  "
-          echo  "  - "./template/LICENSE.md""
-          echo  "  - "./template/.gitignore""
-          echo    - "./template/apax.yml"
+          echo  "  - "./template/watchlist"" >> apax.yml
+          echo  "  - "./template/test"" >> apax.yml
+          echo  "  - "./template/src"" >> apax.yml
+          echo  "  - "./template/docs"" >> apax.yml
+          echo  "  - "./template/README.md"" >> apax.yml
+          echo  "  - "./template/LICENSE.md"" >> apax.yml
+          echo  "  - "./template/.gitignore"" >> apax.yml
+          echo  "  - "./template/apax.yml"" >> apax.yml
           cat apax.yml
           cd ..
 
