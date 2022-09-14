@@ -111,7 +111,7 @@ jobs:
           cd ./simatic-ax-${{ env.PROJECT_NAME }}
           cat apax.yml
           apax pack 2>.package.err 1>.signature
-      
+          ls
       - name: "Publish"
         run: |
           echo publishing package to https://npm.pkg.github.com
