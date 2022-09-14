@@ -90,7 +90,7 @@ jobs:
           echo name: "'@simatic-ax/template-${{ env.PROJECT_NAME }}'" >> apax.yml
           echo version: $VERSION >> apax.yml
           echo type: generic >> apax.yml  
-          echo files:
+          echo files: >> apax.yml
           echo  "  - "./template/watchlist"" >> apax.yml
           echo  "  - "./template/test"" >> apax.yml
           echo  "  - "./template/src"" >> apax.yml
