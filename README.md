@@ -20,10 +20,18 @@ This application example consists of two parts.
       Run the following commands in a CLI
       ```sh
       apax create @simatic-ax/ae-json-library --registry https://npm.pkg.github.com ae-json-library
-      axcode ae-json-library
       ```
 
+      AX Code should open automatically.
+
 1. Start a PLCSIM Advanced Instance or using a 1500 PLC. Download a TIA Portal created HWCN with a 1500 standard PLC (Default IP Address 192.168.0.1).
+
+      > The default ip address can be changed in the apax.yml
+      > ```yml
+      > IP_ADDRESS: "192.168.0.1"
+      > ```
+      
+
 
 1. If not open, open a terminal in AX Code (`CTRL+SHIFT+ö`)
 
