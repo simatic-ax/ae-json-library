@@ -5,6 +5,7 @@ CLASS TestMyProgram
         timeOfOperations : LTIME;
         doc : JsonDocument;
         cmpBuff : ARRAY[0..20] OF CHAR;
+        buffer : ARRAY[0..999] OF CHAR;
         myBoolean : JsonBoolean := (Value := TRUE, Key := 'myBoolean');
         myInt : JsonInt := (Value := 1234, Key := 'myInt');
         myDint : JsonDInt := (Value := DINT#12345678, Key := 'myDint');
@@ -37,17 +38,17 @@ CLASS TestMyProgram
                 // Create Document 1st object model
                 // Expected Value: {"myInt": 1234}
                 doc.AddElement(myInt);
-                doc.Serialize(doc.buffer);
+                doc.Serialize();
                 step := Steps#SerializeDocument1
                 ;
             Steps#SerializeDocument1:
                 // Serialize Document 1st object model1
-                doc.Serialize(doc.buffer);
+                doc.Serialize();
                 step := Steps#ParseDocument1
                 ;
             Steps#ParseDocument1:
                 // Parse Document 1st object model
-                deserializer.SetBuffer(REF(doc.buffer));
+                deserializer.SetBuffer(REF(buffer));
                 key := 'myInt';
                 keyFound := deserializer.TryParse(key, intValue);
                 step := Steps#ResetJSonDocument1
@@ -68,13 +69,13 @@ CLASS TestMyProgram
                 ;
             Steps#SerializeDocument2:
                 // Serialize Document 2nd object model including time meassurement
-                doc.Serialize(doc.buffer);
+                doc.Serialize();
                 step := Steps#ParseDocument2;
                 ;
             Steps#ParseDocument2:
                 // Parse Document 1st object model
                 // Get Values from a nested element
-                deserializer.SetBuffer(REF(doc.buffer));
+                deserializer.SetBuffer(REF(buffer));
                 keyArray[0] := 'myObject';
                 keyArray[1] := 'myInt';
                 keyFound := deserializer.TryParse(keyArray, intValue);
