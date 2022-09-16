@@ -37,10 +37,10 @@ scripts:
       apax watch
 dependencies:
   "@ax/system-strings": 3.0.4
-  "@simatic-ax/json": 1.3.3
+  "@simatic-ax/json": 2.0.1
   "@ax/simatic-1500-clocks": 2.0.1
 devDependencies:
   "@ax/sdk": 2.0.4
-  "@simatic-ax/snippetscollection": 0.0.13
+  "@simatic-ax/snippetscollection": 0.0.14
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
