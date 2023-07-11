@@ -51,7 +51,7 @@ PROGRAM MyProgram
         Steps#ParseDocument1:
             // Parse Document 1st object model
             ActiveStep := 'Parse for "myInt" JSON Document {"myInt": 1234}';
-            deserializer.SetBuffer(REF(buffer));
+            deserializer.buffer := REF(buffer);
             keyFound := deserializer.TryParse('myInt', ParsedValue1);
             step := Steps#ResetJSonDocument1
             ;
@@ -85,7 +85,7 @@ PROGRAM MyProgram
             // Parse Document for the value of the nested key `myObject.myDint` and expect `12345678`
             // Get Values from a nested element
             ActiveStep := 'Parse for "myInt" JSON Document {"myBoolean": true, "myObject": {"myInt": 1234, "myDint": 12345678}}';
-            deserializer.SetBuffer(REF(buffer));
+            deserializer.buffer := REF(buffer);
             keyFound := deserializer.TryParse(keyArray, ParsedValue2);
             step := Steps#ResetJSonDocument2;
             ;
