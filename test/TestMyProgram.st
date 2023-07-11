@@ -48,7 +48,7 @@ CLASS TestMyProgram
                 ;
             Steps#ParseDocument1:
                 // Parse Document 1st object model
-                deserializer.SetBuffer(REF(buffer));
+                deserializer.buffer := REF(buffer);
                 key := 'myInt';
                 keyFound := deserializer.TryParse(key, intValue);
                 step := Steps#ResetJSonDocument1
@@ -75,7 +75,7 @@ CLASS TestMyProgram
             Steps#ParseDocument2:
                 // Parse Document 1st object model
                 // Get Values from a nested element
-                deserializer.SetBuffer(REF(buffer));
+                deserializer.buffer := REF(buffer);
                 keyArray[0] := 'myObject';
                 keyArray[1] := 'myInt';
                 keyFound := deserializer.TryParse(keyArray, intValue);
