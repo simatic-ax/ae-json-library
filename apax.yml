@@ -40,7 +40,7 @@ dependencies:
   "@simatic-ax/json": 4.1.3
   "@ax/simatic-1500-clocks": 4.0.1
 devDependencies:
-  "@ax/sdk": 4.0.3
+  "@ax/sdk": 4.0.12
   "@simatic-ax/snippetscollection": 0.1.3
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
