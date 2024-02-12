@@ -29,7 +29,7 @@ Class UsingDeserializer
         len:= Strings.ToArray.OfCharCount(str := JSON_Entry, arr := buffer);
  
         //Give it to the deserializer
-        deserializer.SetBuffer(REF(buffer));
+        deserializer.buffer := REF(buffer);
 
         //Parse string
         key:= 'key1';
@@ -91,7 +91,7 @@ Class UsingDeserializer
         JSON_Entry := '{ "arraykey": [1234, 5678]}';
 
         len:= Strings.ToArray.OfCharCount(str := JSON_Entry, arr := buffer);
-        deserializer.SetBuffer(REF(buffer));
+        deserializer.buffer := REF(buffer);
 
         key:= 'arraykey';
         keyFound := deserializer.TryParse( key, stringValue);
@@ -111,7 +111,7 @@ Class UsingDeserializer
         JSON_Entry := '{ "key1": {"nestedkey1": "nested value", "nestedkey2": 456}}';
 
         len:= Strings.ToArray.OfCharCount(str := JSON_Entry, arr := buffer);
-        deserializer.SetBuffer(REF(buffer));
+        deserializer.buffer := REF(buffer);
 
 
         //Parse string
@@ -144,7 +144,7 @@ Class UsingDeserializer
         JSON_Entry := '{ "key1": {"nestedkey1": "nested value", "nestedkey2": {"nested_nested_key" : 1234}}}';
 
         len:= Strings.ToArray.OfCharCount(str := JSON_Entry, arr := buffer);
-        deserializer.SetBuffer(REF(buffer));
+        deserializer.buffer := REF(buffer);
 
         //Get Values from a nested element
         keyArray[0] := 'key1';
