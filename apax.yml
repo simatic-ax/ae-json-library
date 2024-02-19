@@ -36,7 +36,7 @@ scripts:
       fi
       apax watch
 dependencies:
-  "@ax/system-strings": 5.0.12
+  "@ax/system-strings": 6.0.94
   "@simatic-ax/json": 4.1.3
   "@ax/simatic-1500-clocks": 4.0.1
 devDependencies:
