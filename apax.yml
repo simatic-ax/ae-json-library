@@ -37,7 +37,7 @@ scripts:
       apax watch
 dependencies:
   "@ax/system-strings": 6.0.94
-  "@simatic-ax/json": 5.0.1
+  "@simatic-ax/json": 6.0.0
   "@ax/simatic-1500-clocks": 6.0.37
 devDependencies:
   "@ax/sdk": 2311.0.1
