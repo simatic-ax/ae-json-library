@@ -5,7 +5,7 @@ author: Siemens AG
 targets:
   - "plcsim"
   - "1500"
-  - axunit-llvm
+  - llvm
 variables:
   APAX_BUILD_ARGS:
     - --debug
