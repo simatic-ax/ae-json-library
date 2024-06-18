@@ -1,5 +1,5 @@
 # General information
-name: 'ae-json-library'
+name: 'ae-use-json-library'
 version: 1.0.0
 type: app
 author: Siemens AG
@@ -34,8 +34,7 @@ variables:
 
 # Apax scripts
 scripts:
-  load: sld -i "$BIN_FOLDER" -t "$IP_ADDRESS" -r --accept-security-disclaimer -l
-    debug --default-server-interface
+  load: sld -i "$BIN_FOLDER" -t "$IP_ADDRESS" -r --accept-security-disclaimer -l debug --default-server-interface
   watch: apax mon  -t "$IP_ADDRESS" -f "$WATCHLISTS/default.mon" -c
   dlplc:
     - apax build
