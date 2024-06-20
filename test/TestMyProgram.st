@@ -1,6 +1,8 @@
 USING Simatic.Ax.Json;
-{TestFixture}
-CLASS TestMyProgram
+
+NAMESPACE Simatic.Ax.UseJsonLibrary
+    {TestFixture}
+    CLASS TestMyProgram
     VAR
         timeOfOperations : LTIME;
         doc : JsonDocument;
@@ -88,4 +90,5 @@ CLASS TestMyProgram
                 ;
         END_CASE;
     END_METHOD
-END_CLASS
+    END_CLASS
+END_NAMESPACE 
