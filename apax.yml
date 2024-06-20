@@ -1,5 +1,5 @@
 # General information
-name: 'ae-json-library'
+name: '@simatic-ax/ae-json-library'
 version: 1.0.0
 type: app
 author: Siemens AG
