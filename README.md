@@ -9,22 +9,39 @@ This application example consists of two parts.
 1. Showing the usage of the library in a PLC Program, which can be downloaded to a 1500 PLC or PLCSIM Advanced
 1. Many examples as UnitTest in the `test` folder
 
-## Install the application example and open it locally
+## Execute the Application Example (AX Code local)
 
-1. Open a command line interface (CLI) and switch to the target folder like:
+1. Open a command line interface (CLI) and switch to the target folder. Example, if the traget folder is D:\temp
 
       ```sh
       D:
-      cd \Examples
+      cd \temp
       ```
 
-1. Install the application example `AX Code`
+1. Install the application example on your local PC
 
       Run the following commands in a CLI
 
       ```sh
       apax create @simatic-ax/ae-json-library --registry https://npm.pkg.github.com ae-json-library
-      axcode ae-json-library
+      ```
+
+      Switch to the project directory
+
+      ```sh
+      cd ae-json-library 
+      ```
+
+      install the dependencies with:
+
+      ```sh
+      apax install
+      ```
+
+      and open AxCode
+
+      ```sh
+      axcode . 
       ```
 
 ### Description of the PLC program
