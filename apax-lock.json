@@ -1,10 +1,10 @@
 {
-  "name": "ae-use-json-library",
+  "name": "@simatic-ax/ae-json-library",
   "version": "1.0.0",
   "lockFileVersion": "2",
   "installStrategy": "strict",
   "root": {
-    "name": "ae-use-json-library",
+    "name": "@simatic-ax/ae-json-library",
     "version": "1.0.0",
     "dependencies": {
       "@ax/system-strings": "7.0.17",

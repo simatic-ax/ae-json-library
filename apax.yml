@@ -35,12 +35,6 @@ variables:
 # Apax scripts
 scripts:
   load: sld -i "$BIN_FOLDER" -t "$IP_ADDRESS" -r --accept-security-disclaimer -l debug --default-server-interface
-  watch: apax mon  -t "$IP_ADDRESS" -f "$WATCHLISTS/default.mon" -c
   dlplc:
     - apax build
     - apax load
-  start:
-    - |
-      apax install -L
-      apax dlplc
-      apax watch

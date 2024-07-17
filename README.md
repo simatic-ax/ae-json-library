@@ -101,29 +101,38 @@ This application example consists of two parts.
 
 1. Start a PLCSIM Advanced Instance or using a 1500 PLC. Download a TIA Portal created HWCN with a 1500 standard PLC (Default IP Address 192.168.0.1).
 
-      > The default ip address can be changed in the apax.yml
->
-      > ```yml
-      > IP_ADDRESS: "192.168.0.1"
-      > ```
+   The default ip address can be changed in the `apax.yml` and in the `.vscode/launch.json`
+
+      ```yml
+      IP_ADDRESS: "192.168.0.1"
+      ```
+
+      ```json
+      {
+         "version": "0.2.0",
+         "configurations": [
+            {
+                  "name": "Debug live on PLC",
+                  "type": "plc-debug",
+                  "request": "launch",
+                  "program": "${workspaceFolder}",
+                  "ip": "192.168.0.1"
+            }
+         ]
+      }
+      ```
 
 1. If not open, open a terminal in AX Code (`CTRL+SHIFT+ö`)
 
 1. Start the application example
 
    ```cli
-   apax start [1500]
+   apax dlplc
    ```
 
    > `1500` is required, if you use a real 1500 PLC instead of PLCSIM Advanced.
 
-      Result:
-
-      After the Download you'll see following conten in the terminal. Exit by pressing `x`.
-
-      ![/monoutput](docs/monoutput.png)
-
-1. Monitor voa mon-File:
+1. Monitor variables with mon-File:
 
       ![monuioutput](docs/monuioutput.png)
 
