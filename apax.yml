@@ -19,7 +19,7 @@ devDependencies:
   "@ax/sdk": 2405.0.0
   "@simatic-ax/snippetscollection": 1.0.0
 dependencies:
-  "@ax/system-strings": 7.0.17
+  "@ax/system-strings": 7.1.47
   "@ax/simatic-1500-clocks": 7.0.4
   "@simatic-ax/json": 7.0.0
 
