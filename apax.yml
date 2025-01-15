@@ -20,7 +20,7 @@ devDependencies:
   "@simatic-ax/snippetscollection": 1.0.0
 dependencies:
   "@ax/system-strings": 7.0.17
-  "@ax/simatic-1500-clocks": 7.0.4
+  "@ax/simatic-1500-clocks": 8.0.8
   "@simatic-ax/json": 7.0.0
 
 # Project variables
