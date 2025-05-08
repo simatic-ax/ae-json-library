@@ -11,17 +11,14 @@ targets:
 # Registries
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
-# Install Setting
-installStrategy: strict
-apaxVersion: 3.2.1
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2405.0.0
-  "@simatic-ax/snippetscollection": 1.0.0
+  "@ax/sdk": ^2504.0.0
+  "@simatic-ax/snippetscollection": ^1.0.0
 dependencies:
-  "@ax/system-strings": 7.0.17
-  "@ax/simatic-1500-clocks": 7.0.4
-  "@simatic-ax/json": 7.0.0
+  "@ax/system-strings": ^10.0.24
+  "@ax/simatic-1500-clocks": ^10.0.6
+  "@simatic-ax/json": ^9.0.0
 
 # Project variables
 variables:
@@ -40,3 +37,5 @@ scripts:
   dlplc:
     - apax build
     - apax load
+catalogs:
+  "@ax/simatic-ax": ^2504.0.0
