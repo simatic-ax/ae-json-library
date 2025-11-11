@@ -4,7 +4,7 @@ version: 1.0.0
 type: app
 author: Siemens AG
 # Description will be displayed in the apax extension
-description: This application example demonstrates the usage of the JSON Library
+description: "Application example demonstrating the usage of the JSON library with PLC programs and unit tests"
 targets:
   - "1500"
   - "llvm"
