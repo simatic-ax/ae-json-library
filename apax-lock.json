@@ -9,7 +9,7 @@
     "dependencies": {
       "@ax/system-strings": "^10.0.24",
       "@ax/simatic-1500-clocks": "^10.0.6",
-      "@simatic-ax/json": "^9.0.0"
+      "@simatic-ax/json": "^10.0.0"
     },
     "devDependencies": {
       "@ax/sdk": "^2510.0.0",
@@ -674,21 +674,21 @@
     },
     "@simatic-ax/conversion": {
       "name": "@simatic-ax/conversion",
-      "version": "2505.0.0",
-      "integrity": "sha512-yUU3p0F+G5LoVW7j8exbowsTTqpCLw7aYGVmT+sWiJXK9IuUUqqoEqefSM4pTzuP77aeSkF+2BxXsXH6of660Q==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/conversion/2505.0.0/2a374d65ea3cc6540834c753c4e1b3bb2bec23c1",
+      "version": "2510.0.1",
+      "integrity": "sha512-JY7bAISs6SeGwO2j65SQZBobRBOzY7T3tQANQp6wrNCjuqE47d7jZ+DvPpt6AJLuSoOSmCGCfkEgTN6jc7XUfQ==",
+      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/conversion/2510.0.1/d0ea4344e1bc204431dbf33eb0be91e4be9b5634",
       "dependencies": {
-        "@ax/system-math": "^10.0.24",
-        "@ax/system-strings": "^10.0.24"
+        "@ax/system-math": "^10.2.7",
+        "@ax/system-strings": "^10.2.7"
       }
     },
     "@simatic-ax/json": {
       "name": "@simatic-ax/json",
-      "version": "9.0.0",
-      "integrity": "sha512-gM/B7tB1cDUcFOQxZnwcEX3LtQ63b1/Xw6OW3frveej77bg4kXXaz3wwHJZHHljrmq91Mwa086lOmQpPDXtqmA==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/json/9.0.0/7a4e81c231fec93f0562872b30c4cca497cc1f56",
+      "version": "10.0.0",
+      "integrity": "sha512-lk9gdototLW6uy42yoqxJGkl1GDGF3o3MhEUqnuq6oH44TXzPbFGcDgAJAKR+ti2LVSA9ngiC3B8MHhufpXJMQ==",
+      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/json/10.0.0/94b21e219beb2c0fdac3997bfc1347958221df46",
       "dependencies": {
-        "@simatic-ax/conversion": "^2505.0.0"
+        "@simatic-ax/conversion": "^2510.0.0"
       }
     },
     "@simatic-ax/snippetscollection": {
