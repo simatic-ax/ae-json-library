@@ -14,11 +14,11 @@ registries:
 # Dependencies
 devDependencies:
   "@ax/sdk": ^2510.0.0
-  "@simatic-ax/snippetscollection": ^1.0.0
+  "@simatic-ax/snippetscollection": ^1.1.0
 dependencies:
-  "@ax/system-strings": ^10.0.24
-  "@ax/simatic-1500-clocks": ^10.0.6
-  "@simatic-ax/json": ^9.0.0
+  "@ax/system-strings": ^10.2.7
+  "@ax/simatic-clocks": ^11.0.14
+  "@simatic-ax/json": ^10.0.1
 
 # Project variables
 variables:
@@ -37,5 +37,3 @@ scripts:
   dlplc:
     - apax build
     - apax load
-catalogs:
-  "@ax/simatic-ax": ^2510.0.0
