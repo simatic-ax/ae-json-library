@@ -18,7 +18,7 @@ devDependencies:
 dependencies:
   "@ax/system-strings": ^10.0.24
   "@ax/simatic-1500-clocks": ^10.0.6
-  "@simatic-ax/json": ^9.0.0
+  "@simatic-ax/json": ^10.0.0
 
 # Project variables
 variables:
