@@ -1,6 +1,6 @@
 USING Simatic.Ax.Conversion;
 USING Simatic.Ax.Json;
-USING Siemens.Simatic.S71500.Clocks;
+USING Siemens.Simatic.Clocks;
 
 PROGRAM MyProgram
     VAR_EXTERNAL
